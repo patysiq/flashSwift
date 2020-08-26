@@ -1,11 +1,17 @@
 
 # By default, SwiftLint uses a set of sensible default rules you can adjust:
+
 disabled_rules: # rule identifiers turned on by default to exclude from running
   - colon
   - comma
   - control_statement
+  - trailing_whitespace
+  - unused_optional_binding
+  - line_length
+  
 opt_in_rules: # some rules are turned off by default, so you need to opt-in
   - empty_count # Find all the available rules by running: `swiftlint rules`
+  
 
 # Alternatively, specify all rules explicitly by uncommenting this option:
 # whitelist_rules: # delete `disabled_rules` & `opt_in_rules` if using this
@@ -30,7 +36,13 @@ force_try:
   severity: warning # explicitly
 # rules that have both warning and error levels, can set just the warning level
 # implicitly
-line_length: 110
+line_length:
+warning: 240
+error: 510
+ignores_comments: true
+ignores_urls: true
+ignores_function_declarations: true
+ignores_interpolated_strings: true
 # they can set both implicitly with an array
 type_body_length:
   - 300 # warning
@@ -56,3 +68,5 @@ identifier_name:
     - URL
     - GlobalAPIKey
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji, sonarqube, markdown, github-actions-logging)
+
+

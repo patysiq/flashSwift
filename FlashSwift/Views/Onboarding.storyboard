@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eU4-US-0CL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding-->
+        <scene sceneID="GKd-WD-UQs">
+            <objects>
+                <viewController restorationIdentifier="Onboarding" storyboardIdentifier="Onboarding" title="Onboarding" id="eU4-US-0CL" customClass="OnBoardingViewController" customModule="FlashSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TaY-gY-rBG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RAL-Cb-QyK">
+                                <rect key="frame" x="40" y="64" width="334" height="778"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashSwift" translatesAutoresizingMaskIntoConstraints="NO" id="nIL-vA-pJF">
+                                        <rect key="frame" x="47" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="GyG-FK-xtR"/>
+                                            <constraint firstAttribute="width" constant="240" id="KIu-Ig-yDE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to FlashSwift" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxA-Wc-pSa">
+                                        <rect key="frame" x="47" y="148" width="240" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="QtR-or-kTV"/>
+                                            <constraint firstAttribute="height" constant="50" id="qhA-kj-Ocu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" name="swiftColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yf-HS-cYU">
+                                        <rect key="frame" x="0.0" y="218" width="334" height="560"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="Lzn-Ka-9Bg"/>
+                                        </constraints>
+                                        <string key="text">Flash Swift is the best way to study this programming language.
+        
+1. Get quick access to the main Swift tips at three different levels of learning: Begginers, Intermediate and Advanced.
+        
+2. Watch the latest selected videos from Swift's top code channels.
+                                                                               3. Access the latest Swift-related questions from the main Q&amp;A channel.
+        
+Enjoy the app,  and  keep learning!</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="BG"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="BG"/>
+                        <constraints>
+                            <constraint firstItem="ZBk-ns-cyE" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="RAL-Cb-QyK" secondAttribute="bottom" constant="10" id="B6M-3S-Owz"/>
+                            <constraint firstItem="RAL-Cb-QyK" firstAttribute="centerX" secondItem="ZBk-ns-cyE" secondAttribute="centerX" id="Icz-RR-Ocu"/>
+                            <constraint firstItem="RAL-Cb-QyK" firstAttribute="leading" secondItem="TaY-gY-rBG" secondAttribute="leadingMargin" constant="20" id="Kag-qK-D8m"/>
+                            <constraint firstItem="RAL-Cb-QyK" firstAttribute="centerY" secondItem="ZBk-ns-cyE" secondAttribute="centerY" id="VUh-Y2-rSw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RAL-Cb-QyK" secondAttribute="trailing" constant="20" id="h1u-v6-tQB"/>
+                            <constraint firstItem="RAL-Cb-QyK" firstAttribute="top" secondItem="ZBk-ns-cyE" secondAttribute="top" constant="20" id="oTz-hr-SYk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZBk-ns-cyE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sB0-Eh-2dn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="198.55072463768118" y="164.73214285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flashSwift" width="512" height="512"/>
+        <namedColor name="BG">
+            <color red="0.84700000286102295" green="0.84700000286102295" blue="0.84700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="swiftColor">
+            <color red="1" green="0.3449999988079071" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
